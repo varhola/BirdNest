@@ -1,6 +1,6 @@
 # BirdNest
 
-Assignment from Reactor: https://assignments.reaktor.com/birdnest/
+Solution to an assignment from Reaktor: https://assignments.reaktor.com/birdnest/
 
 ```
 dotnet run --project Birdnest
