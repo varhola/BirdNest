@@ -7,7 +7,7 @@
 async function start() {
     try {
         await violationConnection.start();
-        console.log("SignalR Connected 1.");
+        console.log("SignalR Connected");
         try {
             await violationConnection.invoke("GetLatestViolations")
         } catch (err) {

@@ -9,8 +9,8 @@ namespace BirdNest.BackgroundServices
     {
         private Timer? _timer = null;
 
-        private HubConnection dronePositionConnection = new HubConnectionBuilder().WithUrl("http://localhost:5064/birdNest").WithAutomaticReconnect().Build();
-        private HubConnection droneHubConnection = new HubConnectionBuilder().WithUrl("http://localhost:5064/droneInfo").WithAutomaticReconnect().Build();
+        private HubConnection dronePositionConnection = new HubConnectionBuilder().WithUrl("http://localhost:5000/birdNest").WithAutomaticReconnect().Build();
+        private HubConnection droneHubConnection = new HubConnectionBuilder().WithUrl("http://localhost:5000/droneInfo").WithAutomaticReconnect().Build();
 
         // private HubConnection dronePositionConnection = new HubConnectionBuilder().WithUrl("https://birdnest20230115134750.azurewebsites.net/birdNest").WithAutomaticReconnect().Build();
         // private HubConnection droneHubConnection = new HubConnectionBuilder().WithUrl("https://birdnest20230115134750.azurewebsites.net/droneInfo").WithAutomaticReconnect().Build();

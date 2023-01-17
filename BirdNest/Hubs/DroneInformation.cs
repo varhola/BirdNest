@@ -44,7 +44,7 @@ namespace BirdNest.Hubs
         public async Task UpdateLatestViolations(IEnumerable<DronePosition> newPositions)
         {
             bool update = false;
-            if (ViolationHistory.Count == 30)
+            if (ViolationHistory.Count == 300)
             {
                 List<JsonNode> lastItem = ViolationHistory.Dequeue();
                 update = lastItem.Count > 0;
