@@ -1,0 +1,59 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.nest {
+    display: flex;
+    flex-direction: row;
+}
+
+#violationList {
+    max-height: 500px;
+    overflow-x: hidden;
+}
+
+#droneMap {
+    width: 500px;
+    min-width: 500px;
+    height: 500px;
+    background-color: purple;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.node {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.violation {
+    background-color: red;
+}
